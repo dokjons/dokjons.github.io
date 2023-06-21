@@ -992,7 +992,6 @@
 }
 #about .code-container pre code {
   display: block;
-  /*text-wrap: wrap;*/
   white-space: pre-wrap;
   padding-left: 60px;
   width: -webkit-fit-content;
