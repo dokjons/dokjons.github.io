@@ -131,7 +131,7 @@ module.exports = {
           'border-radius': '8px',
           'font-size': '1.2rem',
           'border': '1px solid #d300ff',
-
+          'min-width': '110px'
         }
       })
     })
