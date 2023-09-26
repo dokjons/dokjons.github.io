@@ -2399,13 +2399,7 @@ video {
     border-color: rgb(211 0 255 / var(--tw-border-opacity));
   }
 
-  .max-\[768px\]\:px-\[90px\] {
-    padding-left: 90px;
-    padding-right: 90px;
-  }
-
-  .max-\[768px\]\:py-\[90px\] {
-    padding-top: 90px;
+  .max-\[768px\]\:pb-\[90px\] {
     padding-bottom: 90px;
   }
 
