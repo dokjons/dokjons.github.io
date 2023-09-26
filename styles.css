@@ -2404,6 +2404,11 @@ video {
     padding-right: 90px;
   }
 
+  .max-\[768px\]\:py-\[90px\] {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
   .max-\[768px\]\:pl-4 {
     padding-left: 1rem;
   }
