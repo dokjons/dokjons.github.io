@@ -12,7 +12,6 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-
 //Section control
 document.addEventListener('DOMContentLoaded', function() {
     const navContainer = document.querySelector('ul');
@@ -98,6 +97,45 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1000);
     }
 });
+
+//Read more
+const readMoreBtn = document.querySelectorAll('.read-more');
+const projectContainer = document.getElementById('dec-container');
+const closeDescBtn = document.getElementById('close-dec');
+let currentProject = null; // To keep track of the currently open project description
+
+// Function to close the currently open project description
+function closeCurrentProject() {
+    if (currentProject) {
+        currentProject.classList.add('hidden');
+    }
+}
+
+closeDescBtn.addEventListener('click', () => {
+    // Close the currently open project description
+    closeCurrentProject();
+    projectContainer.classList.remove('flex');
+    projectContainer.classList.add('hidden');
+});
+
+readMoreBtn.forEach((button) => {
+    button.addEventListener('click', () => {
+        const projectIdentifier = button.getAttribute('data-project');
+        const projectContent = document.getElementById(`${projectIdentifier}-dec`);
+
+        // Close the currently open project description
+        closeCurrentProject();
+
+        projectContainer.classList.remove('hidden');
+        projectContainer.classList.add('flex');
+        
+        if (projectContent) {
+            projectContent.classList.remove('hidden');
+            currentProject = projectContent; // Set the current project to the newly opened one
+        }
+    });
+});
+
 
 
 //Job toggle buttons
