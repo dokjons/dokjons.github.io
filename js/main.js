@@ -184,6 +184,8 @@ document.addEventListener("DOMContentLoaded", function () {
             li.classList.contains("scaled")
         );
         ulElement.style.height = isAnyCardScaled ? "480px" : "180px";
+
+        document.getElementById("about").scrollTop = document.getElementById("about").scrollHeight;
     }
 
     // Click event handler for ul element (event delegation)
