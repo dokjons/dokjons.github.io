@@ -140,7 +140,7 @@ readMoreBtn.forEach((button) => {
 
 //Job toggle buttons
 const toggleButtons = document.querySelectorAll('.toggle-job');
-let currentContent = document.getElementById('awsContent');
+let currentContent = document.getElementById('onecodeContent');
     
 toggleButtons.forEach(button => {
     button.addEventListener('click', () => {
