@@ -453,17 +453,28 @@
         <div class="flex flex-col gap-4 min-h-[350px] max-[768px]:w-[85%] max-[768px]:min-h-[auto] max-[768px]:mb-8">
             <h2 class="text-3xl font-bold text-slate-300 after:content-normal after:inline-block after:relative after:-top-1 after:w-full after:max-w-[300px] after:h-[1px] after:ml-5 after:bg-[#d300ff] max-[768px]:after:ml-0">Work Experience</h2>
             <div class="flex flex-wrap mb-4">
-                <div class="flex flex-col relative max-w-max max-[768px]:mb-4" role="tablist" aria-label="Job tabs">
-                    <button class="active-job toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="awsContent" role="tab" tabindex="0">Amazon Web Services</button>
-                    <button class="toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="attContent" role="tab" tabindex="1">Attech Computer</button>
-                    <button class="toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="lakudaContent" role="tab" tabindex="2">LAKUDA</button>
+                <div class="flex flex-col relative max-w-max max-[768px]:mb-4 font-semibold" role="tablist" aria-label="Job tabs">
+                    <button class="active-job toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="onecodeContent" role="tab" tabindex="0">OneCode</button>
+                    <button class="toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="awsContent" role="tab" tabindex="1">Amazon Web Services</button>
+                    <button class="toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="attContent" role="tab" tabindex="2">Attech Computer</button>
+                    <button class="toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="lakudaContent" role="tab" tabindex="3">LAKUDA</button>
                 </div>
                 <div class="text-slate-300 ml-4 max-w-[500px]">
-                    <div id="awsContent">
+                    <div id="onecodeContent">
+                        <div class="flex gap-2 text-[1.3rem] font-bold max-[560px]:flex-col"><h3>Full-stack-, App dev & AI integrator</h3><p class="text-[#d300ff]">@ OneCode</p></div>
+                        <p>Jan. 2024 - Present</p>
+                        <ul class="mt-4 flex flex-col gap-3">
+                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Developed and maintained WordPress websites, ensuring optimal functionality and user experience.</li>
+                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Integrated AI technologies into web applications, enhancing user engagement and automating tasks.</li>
+                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Created custom web and mobile applications using full-stack development approach, employing modern technologies.</li>
+                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Collaborated with cross-functional teams to understand project requirements and deliver high-quality solutions within deadlines.</li>
+                        </ul>
+                    </div>
+                    <div id="awsContent" class="hidden">
                         <div class="flex gap-2 text-[1.3rem] font-bold max-[560px]:flex-col"><h3>Linux Admin</h3><p class="text-[#d300ff]">@ Amazon Web Services (AWS)</p></div>
                         <p>Sep. 2019 - Jul. 2022</p>
                         <ul class="mt-4 flex flex-col gap-3">
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Provision anf confugure Linux instances on AWS, ensuring security and optimization.</li>
+                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Provision and configure Linux instances on AWS, ensuring security and optimization.</li>
                             <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Implement security measures, apply updates, and maintain servers.</li>
                             <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Automate tasks using scripts and AWS services, and manage scalability of the infrastructure.</li>
                             <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Monitor performance, troubleshoot issues, and ensure high availability of the AWS enviroments.</li>
@@ -513,8 +524,8 @@
             <div class="fly-in-from-left-200 w-[35%] min-w-[220px] text-slate-300 flex flex-col gap-2 max-[865px]:w-[80%]">
                 <h2 class="text-4xl text-slate-300 m-0 w-full font-bold font-['Chakra'] my-3 after:content-normal after:inline-block after:relative after:-top-1 after:w-full after:max-w-[300px] after:h-[1px] after:ml-5 after:bg-[#d300ff] max-[600px]:after:ml-0">About me</h2>
                 <p>Hey, I'm Jonas, your friendly neighborhood web sorcerer!</p>
-                <p>I'm all about crafting digital enchantments with <span class="text-[#d300ff]">HTML, CSS, JS, Tailwind,</span> and <span class="text-[#d300ff]">React.</span> But my magic doesn't stop there. Python is my versatile wand for AI development, ethical hacking adventures, and conjuring up Flask-powered backend spells.</p>
-                <p>Beyond the code, am I on a quest with <span class="text-[#d300ff]">#OpPedoHunt</span> and <span class="text-[#d300ff]">#OpChildSafety</span>, dedicated to ensuring the online realm is safe for our young champions. In addition, am I passionated about mentoring both newcomers and tech veterans in various tech domains, sharing the magic of knowledge and skills.</p>
+                <p>I'm all about crafting digital enchantments with HTML, CSS, JS, Tailwind, and React. But my magic doesn't stop there. Python is my versatile wand for AI development, ethical hacking adventures, and conjuring up Flask-powered backend spells.</p>
+                <p>Beyond the code, I'm on a quest dedicated to ensuring the online realm is safe for our young champions, particularly focusing on child safety. Additionally, I'm passionate about mentoring both newcomers and tech veterans in various tech domains, sharing the magic of knowledge and skills.</p>
                 <p>A short list of some the tech i work with:</p>
                 <ul class="grid grid-cols-2">
                     <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Python</li>
@@ -553,7 +564,7 @@
             </div>
         </div>
         <h3 class="text-slate-300 m-auto w-fit text-xl font-bold font-['Chakra'] max-[768px]:mb-3">My collection of skill cards</h3>
-        <p class="text-xs italic text-slate-300 m-auto w-fit font-['Chakra'] max-[768px]:hidden">Click on a card to zoom</p>
+        <p class="text-xs italic text-slate-300 m-auto mb-4 w-fit font-['Chakra'] max-[768px]:hidden">Click on a card to zoom</p>
         <ul id="card-ul" class="flex flex-wrap items-center justify-center w-full gap-2 h-full max-h-screen overflow-x-hidden overflow-y-hidden content-center transition-all duration-700 ease-in-out max-[768px]:content-normal max-[458px]:max-h-full">
             <li class="shadow-[0px_0px_15px_0px_rgb(211_0_255_/_55%)] rounded-lg transition-transform duration-500 ease-in-out scale-50 z-0 -mx-[55px] cursor-pointer max-[768px]:scale-100 max-[768px]:m-0">
                 <div class="h-[320px] w-[225px] border border-solid border-black rounded-md bg-black">
