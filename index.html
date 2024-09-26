@@ -23,6 +23,7 @@
     <script src="js/typeeffect.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/randomquotes.js" defer></script>
+    <script src="js/datainjector.js" defer></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
@@ -458,64 +459,18 @@
                     <button class="toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="awsContent" role="tab" tabindex="1">Amazon Web Services</button>
                     <button class="toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="attContent" role="tab" tabindex="2">Attech Computer</button>
                     <button class="toggle-job flex items-center w-full h-10 p-[0px_20px_2px] border-l-2 border-slate-400 border-solid text-slate-300 text-left" data-target="lakudaContent" role="tab" tabindex="3">LAKUDA</button>
-                </div>
-                <div class="text-slate-300 ml-4 max-w-[500px]">
-                    <div id="onecodeContent">
-                        <div class="flex gap-2 text-[1.3rem] font-bold max-[560px]:flex-col"><h3>Full-stack-, App dev & AI integrator</h3><p class="text-[#d300ff]">@ OneCode</p></div>
-                        <p>Jan. 2024 - Aug. 2024</p>
-                        <ul class="mt-4 flex flex-col gap-3">
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Developed and maintained WordPress websites, ensuring optimal functionality and user experience.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Integrated AI technologies into web applications, enhancing user engagement and automating tasks.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Created custom web and mobile applications using full-stack development approach, employing modern technologies.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Collaborated with cross-functional teams to understand project requirements and deliver high-quality solutions within deadlines.</li>
-                        </ul>
-                    </div>
-                    <div id="awsContent" class="hidden">
-                        <div class="flex gap-2 text-[1.3rem] font-bold max-[560px]:flex-col"><h3>Linux Admin</h3><p class="text-[#d300ff]">@ Amazon Web Services (AWS)</p></div>
-                        <p>Sep. 2019 - Jul. 2022</p>
-                        <ul class="mt-4 flex flex-col gap-3">
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Provision and configure Linux instances on AWS, ensuring security and optimization.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Implement security measures, apply updates, and maintain servers.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Automate tasks using scripts and AWS services, and manage scalability of the infrastructure.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Monitor performance, troubleshoot issues, and ensure high availability of the AWS enviroments.</li>
-                        </ul>
-                    </div>
-                    <div id="attContent" class="hidden">
-                        <div class="flex gap-2 text-[1.3rem] font-bold max-[560px]:flex-col"><h3>IT-Supporter</h3><p class="text-[#d300ff]">@ Attech Computer ApS</p></div>
-                        <p>Jul. 2019 - Aug. 2019</p>
-                        <ul class="mt-4 flex flex-col gap-3">
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Customer support and troubleshooting through phone, walk-in and on-site.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Setup, repair and upgrade of laptops, dekstops, tablets, printers and software.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Setup of security and backup soft- and hardware.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Other cases like converting 14k+ images from one extention to another.</li>
-                        </ul>
-                    </div>
-                    <div id="lakudaContent" class="hidden">
-                        <div class="flex gap-2 text-[1.3rem] font-bold max-[560px]:flex-col"><h3>IT-Supporter</h3><p class="text-[#d300ff]">@ LAKUDA ApS</p></div>
-                        <p>Sep. 2017 - Feb. 2019</p>
-                        <ul class="mt-4 flex flex-col gap-3">
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">On-site, walk-in, phone and mail support.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Setup and maintenance of computers, phones, printers, NAS and windows server.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Frontend webdevelopment and design.</li>
-                            <li class="before:content-['\00BB'] before:text-base before:text-[#d300ff] before:mr-2">Create a solution for a scan and package table system, with optimized workflow and easier access to package material.</li>
-                        </ul>
-                    </div>
+                </div>    
+                <div class="text-slate-300 ml-4 max-w-[500px]" id="content">
+                    <div id="onecodeContent" class="job-content"></div>
+                    <div id="awsContent" class="job-content hidden"></div>
+                    <div id="attContent" class="job-content hidden"></div>
+                    <div id="lakudaContent" class="job-content hidden"></div>
                 </div>
             </div>
         </div>
         <div class="flex flex-col gap-4 self-start text-slate-300 max-[768px]:mb-4 max-[768px]:w-[85%]">
             <h4 class="text-3xl font-bold text-slate-300 after:content-normal after:inline-block after:relative after:-top-1 after:w-full after:max-w-[300px] after:h-[1px] after:ml-5 after:bg-[#d300ff] max-[768px]:after:ml-0">Education</h4>
-            <div class="flex flex-wrap gap-16 justify-between max-[768px]:gap-0">
-                <div class="mb-8">
-                    <h5 class="text-[#d300ff] text-[1.1rem] font-bold">Multimedia / Webdeveloper</h5>
-                    <p class="text-base">IBA Erhvervsakademi Kolding</p>
-                    <p class="text-base">Aug. 2022 - Jun. 2024</p>
-                </div>
-                <div>
-                    <h5 class="text-[#d300ff] text-[1.1rem] font-bold">IT-Supporter</h5>
-                    <p class="text-base">Syddansk Erhvervsskole</p>
-                    <p class="text-base">2016 - 2019</p>
-                </div>
+            <div class="flex flex-wrap gap-16 justify-between max-[768px]:gap-0" id="educationContent">
             </div>
         </div>
     </section>
