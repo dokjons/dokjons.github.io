@@ -836,6 +836,14 @@ video {
   max-height: 450px;
 }
 
+.max-h-\[810px\] {
+  max-height: 810px;
+}
+
+.h-\[calc\(100vh_-_80px\)\] {
+  height: calc(100vh - 80px);
+}
+
 .max-h-\[calc\(100vh_-_480px\)\] {
   max-height: calc(100vh - 480px);
 }
@@ -2433,6 +2441,10 @@ video {
 
   .max-\[768px\]\:h-screen {
     height: 100vh;
+  }
+
+  .max-\[768px\]\:h-\[calc\(100vh_-_150px\)\] {
+    height: calc(100vh - 150px);
   }
 
   .max-\[768px\]\:max-h-\[calc\(100vh_-_80px\)\] {
