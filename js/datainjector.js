@@ -1,4 +1,15 @@
 const jobData = {
+    "currentContent": {
+        "role": "Full-stack developer",
+        "company": "Redacted",
+        "dates": "Nov. 2024 - Present",
+        "tasks": [
+            "Developing and maintaining websites using mainly PHP.",
+            "Designing and creating frontends for websites using various technologies.",
+            "Working with various database engines using SQL",
+            "Customer contact and support, solving various technical issues and questions."
+        ]
+    },
     "onecodeContent": {
         "role": "Full-stack-, App dev & AI integrator",
         "company": "OneCode",
@@ -78,7 +89,7 @@ function displayJobContent(jobKey) {
 }
 
 // Initialize by displaying the first job content (Onecode)
-displayJobContent('onecodeContent');
+displayJobContent('currentContent');
 
 // Tab switching logic
 const tabs = document.querySelectorAll('.toggle-job');
